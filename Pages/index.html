@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header>
+      <!-- darkmode -->
+      <div class="dark_mode">
+        <img src="/images/sun.png" alt="light mode" class="light-mode " />
+        <img src="/images/moon.png" alt="light mode" class="dark-mode display"  />
+        <div class="toggle">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="inner-container ">
+         
+        <h1 class="sign-up">Sign Up</h1>
+        <form>
+          <div class="input">
+            <input type="text" placeholder="Name" class="name" required />
+          </div>
+
+          <div class="input">
+            <input type="email" placeholder="Email" class="email" required />
+          </div>
+          <div class="input">
+            <input
+              type="password"
+              placeholder="Password"
+              class="password"
+              required
+            />
+          </div>
+
+          <!-- Captcha area -->
+          <div class="captcha-area">
+            <div class="captcha-img">
+              <img src="/images/captcha.png" alt="captcha-img" />
+              <span class="captcha"></span>
+            </div>
+            <button class="refresh-btn">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+          </div>
+          <input
+            type="text"
+            placeholder="Enter the text from the image"
+            class="captcha-input"
+          />
+          <p class="captcha-status"></p>
+          <button class="signup-btn" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/Scripts/script.js"></script>
+  </body>
+</html>
