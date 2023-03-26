@@ -13,20 +13,19 @@ header {
 
 .container {
   width: 100%;
-  height: calc(100vh - 10vh);
+  height: 90vh;
   background: beige;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .inner-container {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 25rem;
-  height: 80vh;
   padding: 2rem;
 }
 
@@ -68,8 +67,9 @@ input {
   font-size: 1.3rem;
   color: #f8f2f2;
   text-align: center;
-  top: 20%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .refresh-btn {
   font-size: 1.2rem;
@@ -171,4 +171,62 @@ input {
 
 .light {
   color: #fff;
+}
+
+
+@media only screen and (max-width: 480px){
+.light-mode {
+  width: 12%;
+  
+}
+.dark-mode {
+  width: 12%;
+ 
+}
+
+
+.toggle {
+  width: 3rem;
+  height: 1rem;
+  
+}
+
+.circle {
+  width: 1.2rem;
+  height: 1.5rem;
+  
+}
+
+.captcha {
+  font-size: 0.9rem;
+  
+}
+}
+@media only screen and (max-width: 280px){
+.light-mode {
+  width: 20%;
+  
+}
+.dark-mode {
+  width: 20%;
+ 
+}
+
+
+.toggle {
+  width: 3rem;
+  height: 1rem;
+  
+}
+
+.circle {
+  width: 1.2rem;
+  height: 1.5rem;
+  
+}
+
+.captcha {
+  font-size: 0.8rem;
+  
+}
 }

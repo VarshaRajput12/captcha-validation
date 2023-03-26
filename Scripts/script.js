@@ -1,5 +1,5 @@
 const captcha = document.querySelector(".captcha");
-const reloadBtn = document.querySelector(".refresh-btn");
+const refreshBtn = document.querySelector(".refresh-btn");
 const captchaInput = document.querySelector(".captcha-input");
 const captchaStatus = document.querySelector(".captcha-status");
 const form = document.querySelector("form");
@@ -83,7 +83,7 @@ function getCaptcha() {
   }
 }
 getCaptcha(); //calling getCaptcha when the page open
-reloadBtn.addEventListener("click", () => {
+refreshBtn.addEventListener("click", () => {
   removeContent();
   getCaptcha();
 });
@@ -107,7 +107,7 @@ form.addEventListener("submit", (e) => {
     captchaInput.value = "";
     captcha.innerText = "";
     getCaptcha();
-    captchaStatus.innerText = "Captcha not matched. Please try again!";
+    captchaStatus.innerText = "Captcha does not match. Please try again!";
   }
 });
 function removeContent() {
