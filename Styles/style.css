@@ -6,11 +6,11 @@
 }
 
 header{
-    background-color: cadetblue;
+    background-color: rgb(114, 194, 197);
     padding: 1.2rem ;
     position: relative;
 }
-/*  */
+
 .container {
   width: 100%;
   height: calc(100vh - 10vh);
@@ -110,12 +110,6 @@ input {
  box-shadow: rgba(30, 107, 214, 0.35) 0px 5px 15px;
 }
 
-/* 
-#light-dark-mode{
-    width: 10%;
-    float: right;
-} */
-
 
 /* dark mode */
 
@@ -176,11 +170,11 @@ input {
 } 
 
 .dark1 {
-  background-color: #1c2938;
+  background-color: #506279;
 }
 
 .dark2 {
-  background-color: #000000;
+  background-color: #10171e;
 }
 
 .light {
