@@ -107,7 +107,7 @@ form.addEventListener("submit", (e) => {
     captchaInput.value = "";
     captcha.innerText = "";
     getCaptcha();
-    captchaStatus.innerText = "Captcha does not match. Please try again!";
+    captchaStatus.innerText = "Invalid captcha. Please try again!";
   }
 });
 function removeContent() {
