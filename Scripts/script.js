@@ -134,20 +134,19 @@ function handleCaptcha() {
 const sun = document.querySelector(".light-mode");
 const moon = document.querySelector(".dark-mode");
 
-console.log(moon)
+console.log(moon);
 const container = document.querySelector(".container");
 const innerContainer = document.querySelector(".inner-container");
 const signUp = document.querySelector(".sign-up");
 
 toggle.addEventListener("click", () => {
-    circle.classList.toggle("move");
-    container.classList.toggle("dark1");
-    innerContainer.classList.toggle("dark2");
-    signUp.classList.toggle("light");
+  circle.classList.toggle("move");
+  container.classList.toggle("dark1");
+  innerContainer.classList.toggle("dark2");
+  signUp.classList.toggle("light");
 
-    if(sun.classList.contains !== "display"){
-        sun.classList.toggle("display")
-        moon.classList.toggle("display");
-    }
-   
+  if (sun.classList.contains !== "display") {
+    sun.classList.toggle("display");
+    moon.classList.toggle("display");
+  }
 });
